@@ -1,0 +1,37 @@
+
+# @name create-video
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "node",
+    "description": "Descrição do video 02",
+    "duration": 180
+}
+
+###
+
+# @name get-all-videos
+GET http://localhost:3333/videos
+
+###
+
+# @name get-video-by-search
+GET http://localhost:3333/videos?search=node
+
+###
+
+# @name updating-video
+PUT http://localhost:3333/videos/246cf273-9cf7-42ed-99e7-1f0717f45782
+Content-Type: application/json
+
+{
+    "title": "Video 01",
+    "description": "Descrição do video 01",
+    "duration": 90
+}
+
+###
+
+# @name delete-video
+DELETE http://localhost:3333/videos/246cf273-9cf7-42ed-99e7-1f0717f45782
