@@ -1,6 +1,6 @@
 
 # @name create-video
-POST http://localhost:3333/videos
+POST https://node-do-zero-mpbbzok58-cmoraes5.vercel.app/videos
 Content-Type: application/json
 
 {
